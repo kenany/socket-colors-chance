@@ -1,0 +1,29 @@
+{
+  "name": "socket-colors-chance",
+  "version": "0.0.0",
+  "description": "Get the chances of rolling specific socket colors on an item",
+  "keywords": [
+    "path of exile"
+  ],
+  "repository": "KenanY/socket-colors-chance",
+  "license": "MIT",
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/index.js"
+  },
+  "dependencies": {
+    "factorial": "^0.0.2"
+  },
+  "devDependencies": {
+    "lodash.isfunction": "^3.0.7",
+    "tape": "^4.4.0"
+  }
+}
