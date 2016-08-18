@@ -1,6 +1,6 @@
 'use strict';
 
-var socketColorsChance = require('../');
+var socketColorsChance = require('../dist/');
 var test = require('tape');
 var isFunction = require('lodash.isfunction');
 
