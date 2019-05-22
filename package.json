@@ -25,7 +25,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "factorial": "^0.0.3"
+    "factorial": "^1.0.0"
   },
   "devDependencies": {
     "@kenan/eslint-config": "^4.0.0",
