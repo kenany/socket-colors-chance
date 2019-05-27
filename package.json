@@ -8,19 +8,22 @@
   "repository": "KenanY/socket-colors-chance",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "source": "index.js",
   "main": "dist/index.js",
-  "jsnext:main": "index.js",
+  "module": "dist/index.mjs",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
   "files": [
+    "dist",
     "index.js",
-    "LICENSE.txt",
-    "dist"
+    "LICENSE.txt"
   ],
   "directories": {
     "test": "test"
   },
   "scripts": {
     "lint": "eslint *.js test/*.js",
-    "build": "rollup -c",
+    "build": "microbundle --strict --no-compress",
     "pretest": "npm run -s lint && npm run -s build",
     "test": "tape test/index.js"
   },
@@ -31,8 +34,7 @@
     "@kenan/eslint-config": "^6.0.0",
     "eslint": "^5.16.0",
     "lodash.isfunction": "^3.0.7",
-    "rollup": "^0.36.0",
-    "rollup-plugin-buble": "^0.14.0",
+    "microbundle": "^0.11.0",
     "tape": "^4.4.0"
   }
 }
