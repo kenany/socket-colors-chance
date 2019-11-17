@@ -1,7 +1,5 @@
 # socket-colors-chance
 
-[![Build Status][travis-svg]][travis]
-
 Get the chances of getting specific socket colors on a [Path of Exile][poe]
 item.
 
@@ -53,8 +51,6 @@ colors as a _Number_.
 parameters.
 
 
-   [travis]: https://travis-ci.org/KenanY/socket-colors-chance
-   [travis-svg]: https://img.shields.io/travis/KenanY/socket-colors-chance.svg
    [poe]: https://www.pathofexile.com/
    [chromatic]: https://github.com/KenanY/chromatic-orb
    [vorici]: http://pathofexile.gamepedia.com/Vorici,_Master_Assassin

@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "eslint *.js test/*.js",
     "build": "microbundle --strict --no-compress",
-    "pretest": "npm run -s lint && npm run -s build",
+    "pretest": "npm run -s build",
     "test": "tape test/index.js"
   },
   "dependencies": {
