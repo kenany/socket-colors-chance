@@ -35,7 +35,7 @@
     "@kenan/renovate-config": "1.5.0",
     "eslint": "7.29.0",
     "lodash.isfunction": "3.0.9",
-    "microbundle": "0.13.0",
+    "microbundle": "0.13.3",
     "tape": "5.2.2"
   }
 }
