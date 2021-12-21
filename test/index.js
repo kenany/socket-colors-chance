@@ -1,9 +1,9 @@
 'use strict';
 
-var test = require('tape');
-var isFunction = require('lodash.isfunction');
+const test = require('tape');
+const isFunction = require('lodash.isfunction');
 
-var socketColorsChance = require('../dist/');
+const socketColorsChance = require('../dist/');
 
 test('exports a function', function(t) {
   t.plan(1);
@@ -42,15 +42,16 @@ test('3s: 1R, 1G, 1B', function(t) {
 test('throws on invalid sockets', function(t) {
   t.plan(3);
 
-  var expected = new RegExp(/expected: 0 < opts.sockets < 7/);
+  const expected = /expected: 0 < opts.sockets < 7/;
 
-  t.throws(socketColorsChance.bind(null, {}), expected);
-  t.throws(socketColorsChance.bind(null, { sockets: 0 }), expected);
-  t.throws(socketColorsChance.bind(null, { sockets: 7 }), expected);
+  // @ts-expect-error `sockets` is a required option.
+  t.throws(() => socketColorsChance({}), expected);
+  t.throws(() => socketColorsChance({ sockets: 0 }), expected);
+  t.throws(() => socketColorsChance({ sockets: 7 }), expected);
 });
 
 test('throws on invalid desired sockets', function(t) {
-  var FIXTURES = [
+  const FIXTURES = [
     { red: -1 },
     { green: -2 },
     { blue: -3 },
@@ -60,12 +61,11 @@ test('throws on invalid desired sockets', function(t) {
     { blue: 9 },
     { red: 3, green: 2, blue: 2 }
   ];
-  var invalidMsg = new RegExp(/invalid number of desired sockets/);
+  const invalidMsg = /invalid number of desired sockets/;
 
   t.plan(FIXTURES.length);
 
   FIXTURES.forEach(function(f) {
-    f.sockets = 6;
-    t.throws(socketColorsChance.bind(null, f), invalidMsg);
+    t.throws(() => socketColorsChance({ ...f, sockets: 6 }), invalidMsg);
   });
 });

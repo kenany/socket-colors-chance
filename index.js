@@ -4,6 +4,21 @@ import factorial from 'factorial';
 
 const X = 22;
 
+/**
+ * @typedef {object} SocketColorChanceOptions
+ * @property {number} sockets
+ * @property {number} [red]
+ * @property {number} [green]
+ * @property {number} [blue]
+ * @property {number} [strength]
+ * @property {number} [dexterity]
+ * @property {number} [intelligence]
+*/
+
+/**
+ * @param {SocketColorChanceOptions} opts
+ * @returns {number}
+ */
 function chance(opts) {
   if (!opts.sockets || opts.sockets < 1 || opts.sockets > 6) {
     throw new Error('expected: 0 < opts.sockets < 7');
@@ -43,6 +58,14 @@ function chance(opts) {
   const gc = (X + dexterity) / div;
   const bc = (X + intelligence) / div;
 
+  /**
+   * @param {number} red
+   * @param {number} green
+   * @param {number} blue
+   * @param {number} free
+   * @param {number} [pos]
+   * @returns {number}
+   */
   function multinomial(red, green, blue, free, pos = 1) {
     if (free > 0) {
       return (pos <= 1 ? multinomial(red + 1, green, blue, free - 1, 1) : 0)

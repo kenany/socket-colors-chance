@@ -7,7 +7,7 @@
   ],
   "repository": "KenanY/socket-colors-chance",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "source": "index.js",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,21 +21,36 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": "10 || 12 || 14 || >=16"
+  },
   "scripts": {
+    "type-check": "tsc",
+    "posttype-check": "npm run -s type-coverage",
+    "type-coverage": "type-coverage --at-least 100 --detail --strict",
     "lint": "eslint *.js test/*.js",
     "build": "microbundle --strict --no-compress",
+    "postbuild": "npm run -s type-check",
     "pretest": "npm run -s build",
-    "test": "tape test/index.js"
+    "test": "tape test/index.js",
+    "prepack": "npm run -s build",
+    "release": "semantic-release"
   },
   "dependencies": {
     "factorial": "^2.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "9.0.4",
-    "@kenan/renovate-config": "1.5.1",
+    "@kenan/eslint-config": "^9.0.4",
+    "@kenan/renovate-config": "^1.5.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@tsconfig/node12": "^1.0.9",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "7.32.0",
-    "lodash.isfunction": "3.0.9",
-    "microbundle": "0.14.1",
-    "tape": "5.3.1"
+    "lodash.isfunction": "^3.0.9",
+    "microbundle": "^0.14.1",
+    "semantic-release": "^18.0.1",
+    "tape": "^5.3.1",
+    "type-coverage": "^2.19.0"
   }
 }
