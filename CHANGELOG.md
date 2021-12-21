@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/KenanY/socket-colors-chance/compare/1.1.1...2.0.0) (2021-12-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** Node.js v10 is no longer supported.
+
+### Features
+
+* **ci:** drop Node.js v10 support ([9b20854](https://github.com/KenanY/socket-colors-chance/commit/9b2085401f3cd9aa54de23e395c2d8980df1dc04))
+
 ### [1.1.1](https://github.com/KenanY/socket-colors-chance/compare/1.1.0...1.1.1) (2021-12-21)
 
 
