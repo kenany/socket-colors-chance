@@ -50,6 +50,6 @@
     "microbundle": "^0.14.2",
     "semantic-release": "^19.0.2",
     "tape": "^5.5.2",
-    "type-coverage": "^2.21.0"
+    "type-coverage": "^2.21.1"
   }
 }
