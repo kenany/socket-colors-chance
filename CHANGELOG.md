@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/KenanY/socket-colors-chance/compare/2.0.0...3.0.0) (2022-12-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([113254e](https://github.com/KenanY/socket-colors-chance/commit/113254eeb3b4aef6d84a0743108fa915eb19f96b))
+
 ## [2.0.0](https://github.com/KenanY/socket-colors-chance/compare/1.1.1...2.0.0) (2021-12-21)
 
 
