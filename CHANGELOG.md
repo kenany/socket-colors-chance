@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/kenany/socket-colors-chance/compare/3.0.0...4.0.0) (2023-09-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v14 and v16 are no longer supported.
+
+### Features
+
+* drop Node.js v14 and v16 ([cfda30e](https://github.com/kenany/socket-colors-chance/commit/cfda30e3d4775a949be23a91c6822659228e5c90))
+
 ## [3.0.0](https://github.com/KenanY/socket-colors-chance/compare/2.0.0...3.0.0) (2022-12-26)
 
 
