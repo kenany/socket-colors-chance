@@ -5,7 +5,7 @@
   "keywords": [
     "path of exile"
   ],
-  "repository": "KenanY/socket-colors-chance",
+  "repository": "github:kenany/socket-colors-chance",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "source": "index.js",
@@ -22,7 +22,7 @@
     "test": "test"
   },
   "engines": {
-    "node": "14 || 16 || >=18"
+    "node": "18 || >=20"
   },
   "scripts": {
     "type-check": "tsc",
