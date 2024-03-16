@@ -43,13 +43,14 @@
     "@kenan/eslint-config": "^10.0.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@tsconfig/node14": "^14.1.0",
+    "@tsconfig/node18": "^18.2.2",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "eslint": "^8.57.0",
     "lodash.isfunction": "^3.0.9",
     "microbundle": "^0.15.1",
     "semantic-release": "^23.0.2",
     "tape": "^5.7.5",
-    "type-coverage": "^2.27.1"
+    "type-coverage": "^2.27.1",
+    "typescript": "^5.4.2"
   }
 }
