@@ -11,7 +11,7 @@ applies to [Vorici's][vorici] recipes. Formula is based on
 ## Example
 
 ``` javascript
-var socketColorsChance = require('socket-colors-chance');
+import { socketColorsChance } from 'socket-colors-chance';
 
 socketColorsChance({
   sockets: 3,
@@ -31,7 +31,7 @@ $ npm install socket-colors-chance
 ## API
 
 ``` javascript
-var socketColorsChance = require('socket-colors-chance');
+import { socketColorsChance } from 'socket-colors-chance';
 ```
 
 ### `socketColorsChance(opts)`
